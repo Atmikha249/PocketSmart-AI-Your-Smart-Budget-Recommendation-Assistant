@@ -1,1 +1,193 @@
 Project Development Phase
+# PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+## Project Development Phase
+
+### 1. Introduction
+
+The Project Development Phase is the stage where the PocketSmart AI application is developed based on the requirements and design of the project. The main aim is to create a smart application that helps users manage their money, track expenses, plan budgets, and receive personalized recommendations.
+
+PocketSmart AI helps students and other users make better financial decisions by organizing their income and expenses in one place.
+
+### 2. Modules Developed
+
+![Website ui vector elements. Log In and Sign Up UI UX on Smartphone Screen. Sign in and sign up form page. Form page. Website ui vector elements. Login Application with Password Form Window.](https://images.openai.com/static-rsc-4/WQ0INrpFTEhqWAXw4dm0BjGO09292R8GMRCplWomQN7CGYSrc12GuOBw8zGVgFsd0ElWJA5w2MlAFvNTILfcpP9sx8hqXHWPzIM5uHZFRBCWHSbop43cwpZxO7Japt9noKM22yeMkWET3-pJyqMpGWY743UZzV0WRMR9OHuDU0UTtDsdfj81FGFgFDEFl5l4?purpose=inline)
+
+Module 1: User Registration and Login
+
+Allows users to create an account and securely log in to the application. User details are validated before access is granted.
+
+![Finance Flow – Modern Budget & Expense Tracking Dashboard by Abdullah Arshad on Dribbble](https://images.openai.com/static-rsc-4/wh74w2L881TeiHUZL7K55q533Bvgmtjjp4aXgv3pxs2EkOgDI8cHUqOHSf1zg7jxYoetXuVhW05_ckBHUTCEYo5oja0Pl97WqDfI58cEk3AN9cMUF5xCUjol3WZ3qZRvEQEa3iI3Nu6vI15Xw34IW4u8vceYhKKba8YtxgtfEIM?purpose=inline)
+
+Module 2: Expense Tracking
+
+Allows users to enter daily expenses, select expense categories, and view their spending history.
+
+![11 Books, Apps & Online Tools That Can Help Teens Learn the Life Skills They Actually Want to Know](https://images.openai.com/static-rsc-4/uw-Zw1iukXQEZykXYQITzpdc93NjQkTmt47z0QbfpJfPL-5pgm0xYmBTm6ybdWCnDRcawvBItYvUYRHHZ3EdrY9Z5wQuZKM_S-ksbzj0IoLyl02JHPIvb8cGfSAcyL_X0yKwCFFCU-1Mm7v4pnINYyacn9ivvt92XIB6f--2QuM?purpose=inline)
+
+Module 3: Smart Budget Management
+
+Helps users set a monthly budget, calculate their remaining balance, and receive alerts when spending approaches the budget limit.
+
+![Artificial intelligence business innovation financial success wealth generation digital technology human interaction robot assistant creative thinking startup concept money making flat design lightbulb idea](https://images.openai.com/static-rsc-4/6g4atpe1xH65kaKQpJRuc_NIfH_0QBKaM7vQONNhMSqBCv4oxhLIUQ0CUitzDpmMyJABizAvMe5kXhSwAls8VQe6Zg3dvOAgR34rv1RdID2E6vBIkVhrHHxx6asxY2j14VeMCIJ1XJ7_gKhzPwz4QtsbaTQPFtJM8dHddNHzJc8_qAGIV06pyc4KutvwB6BM?purpose=inline)
+
+Module 4: AI Recommendation System
+
+Analyses spending patterns and provides suggestions, such as reducing unnecessary expenses and saving more money.
+
+![Fintrack Finance & Budget Tracker App with Firebase Backend by Naasmind](https://images.openai.com/static-rsc-4/JC3KbkOjPWkW3LKIe9EsUlpCpnKprmEBCjsBBpo_xo___5uW8zc50LnsWq5XsFLYiEN2yQZR7j9tG9ICv0p_8xEKZKbbT8hlNQYQG9HQqYYEToxkrqzCXcg5nswVAdUJT5ffM_FALP9LP10zEfxCd46xdGbpVBP40jpCvapprXk?purpose=inline)
+
+Module 5: Reports and Analytics
+
+Displays expense summaries, category-wise spending, budget usage, and savings information through charts and reports.
+
+
+### 3. Technologies Used
+
+|
+Technology
+
+|
+
+Purpose
+
+|
+| --- | --- |
+|
+
+HTML
+
+|
+
+Creates the structure of the application
+
+|
+|
+
+CSS
+
+|
+
+Designs the user interface
+
+|
+|
+
+JavaScript
+
+|
+
+Handles user interactions and calculations
+
+|
+|
+
+Python
+
+|
+
+Implements budget logic and AI recommendations
+
+|
+|
+
+SQLite
+
+|
+
+Stores user expenses and budget details
+
+|
+|
+
+AI logic
+
+|
+
+Analyses spending and generates suggestions
+
+|
+
+These are the proposed technologies for the project; the final stack can be adjusted during implementation.
+
+### 4. Development Process
+
+1. Design the interface: Create the home page, dashboard, expense form, and budget page.
+
+2. Develop the expense module: Write code to add, display, and categorize expenses.
+
+3. Implement budget calculations: Calculate total expenses, remaining budget, and savings.
+
+4. Develop AI recommendations: Use spending data to suggest ways to reduce expenses.
+
+5. Connect the database: Store and retrieve user information, budgets, and transactions.
+
+6. Integrate all modules: Connect the different modules into one application.
+
+### 5. Sample AI Recommendation Logic
+
+The application can provide recommendations based on simple rules initially, with machine-learning techniques added later.
+
+Python
+
+Run
+
+```
+def recommend_savings(budget, expenses):
+    total_spent = sum(expenses.values())
+    remaining = budget - total_spent
+
+    print("Total spent:", total_spent)
+    print("Remaining budget:", remaining)
+
+    if remaining < 0:
+        print("Recommendation: Reduce spending immediately.")
+    elif total_spent >= budget * 0.8:
+        print("Recommendation: You have used 80% of your budget.")
+    else:
+        print("Recommendation: Keep saving and track expenses.")
+
+expenses = {
+    "Food": 2000,
+    "Travel": 1000,
+    "Shopping": 1500
+}
+
+recommend_savings(6000, expenses)
+```
+
+### 6. Expected Output
+
+## PocketSmart AI Dashboard
+
+Sample demonstration data
+
+Monthly Budget
+
+# ₹6,000
+
+Total Expenses
+
+# ₹4,500
+
+Remaining Budget
+
+# ₹1,500
+
+Budget Used
+
+# 75%
+
+Budget usage
+
+75%
+
+AI Savings Tip
+
+Your remaining budget is ₹1,500. Review shopping and food expenses to identify possible savings.
+
+### 7. Conclusion
+
+The Project Development Phase converts the PocketSmart AI design into a working application. By combining expense tracking, budget management, data storage, and intelligent recommendations, the system helps users understand their spending habits and manage their money more effectively.
+
+Next phase: Project Testing Phase — checking the functionality, accuracy, usability, and security of the application.
