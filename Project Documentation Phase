@@ -1,1 +1,187 @@
 Project Documentation Phase
+# PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+## Project Documentation Phase
+
+### 1. Introduction
+
+The **Project Documentation Phase** is the stage where all information about the PocketSmart AI project is systematically recorded. It explains the project idea, objectives, requirements, modules, technologies, development process, testing methods, and expected results.
+
+The documentation acts as a complete reference for understanding and maintaining the PocketSmart AI system.
+
+### 2. Project Overview
+
+**Project Name:** PocketSmart AI
+**Project Type:** AI-based Budget and Recommendation Assistant
+**Target Users:** Students, individuals, and small-budget users
+
+**Main Purpose:**
+PocketSmart AI helps users manage their personal finances by recording expenses, setting budgets, analysing spending patterns, and providing smart recommendations.
+
+### 3. Problem Statement
+
+Many users find it difficult to control their daily expenses and maintain a proper budget. Manual expense tracking can be time-consuming, and users may not notice unnecessary spending.
+
+PocketSmart AI addresses this problem by providing a simple digital platform for **expense tracking, budget management, financial analysis, and personalized recommendations**.
+
+### 4. Objectives
+
+The main objectives of PocketSmart AI are:
+
+* To record daily income and expenses.
+* To categorize expenses such as food, travel, shopping, and education.
+* To allow users to set monthly budgets.
+* To calculate total spending and remaining balance.
+* To analyse spending patterns.
+* To provide AI-based recommendations.
+* To help users develop better saving habits.
+* To display financial information using simple charts and reports.
+
+### 5. System Modules
+
+| Module                       | Description                             |
+| ---------------------------- | --------------------------------------- |
+| **User Module**              | Registration and login                  |
+| **Expense Module**           | Add, edit, delete, and view expenses    |
+| **Budget Module**            | Set and monitor budgets                 |
+| **AI Recommendation Module** | Provides suggestions based on spending  |
+| **Analytics Module**         | Displays spending statistics and charts |
+| **Report Module**            | Generates financial summaries           |
+
+### 6. Functional Requirements
+
+The system should allow the user to:
+
+1. Register and log into the application.
+2. Add income information.
+3. Add daily expenses.
+4. Select an expense category.
+5. View previous transactions.
+6. Set a monthly budget.
+7. Calculate remaining money.
+8. Monitor budget usage.
+9. Receive spending recommendations.
+10. View reports and charts.
+
+### 7. Non-Functional Requirements
+
+The system should provide:
+
+* **Usability:** Simple and user-friendly interface.
+* **Performance:** Quick calculation and response.
+* **Security:** Protection of user information.
+* **Reliability:** Accurate expense and budget calculations.
+* **Scalability:** Ability to add more features later.
+* **Maintainability:** Easy-to-understand and maintainable code.
+
+### 8. Technology Used
+
+| Technology           | Purpose                               |
+| -------------------- | ------------------------------------- |
+| **HTML**             | Web page structure                    |
+| **CSS**              | User interface design                 |
+| **JavaScript**       | User interaction and calculations     |
+| **Python**           | Backend and recommendation logic      |
+| **SQLite/MySQL**     | Database                              |
+| **AI/ML techniques** | Spending analysis and recommendations |
+
+### 9. Database Documentation
+
+Important database tables can include:
+
+**User Table**
+
+| Field    | Description    |
+| -------- | -------------- |
+| User_ID  | Unique user ID |
+| Name     | User name      |
+| Email    | User email     |
+| Password | Login password |
+
+**Expense Table**
+
+| Field       | Description       |
+| ----------- | ----------------- |
+| Expense_ID  | Unique expense ID |
+| User_ID     | Associated user   |
+| Category    | Expense category  |
+| Amount      | Expense amount    |
+| Date        | Date of expense   |
+| Description | Expense details   |
+
+**Budget Table**
+
+| Field     | Description      |
+| --------- | ---------------- |
+| Budget_ID | Unique budget ID |
+| User_ID   | Associated user  |
+| Amount    | Budget amount    |
+| Month     | Budget month     |
+
+### 10. AI Recommendation Documentation
+
+The recommendation system analyses the user's spending information.
+
+**Example:**
+
+> Monthly budget = ₹10,000
+> Total spending = ₹8,500
+> Food spending = ₹3,500
+
+The system may generate:
+
+**“You have used 85% of your monthly budget. Consider reducing unnecessary food and shopping expenses to stay within your budget.”**
+
+The recommendations should be presented as informational suggestions rather than guaranteed financial advice.
+
+### 11. System Workflow
+
+**User Login → Dashboard → Add Income/Expense → Categorize Expense → Update Budget → Analyse Spending → Generate Recommendation → Display Report**
+
+### 12. Testing Documentation
+
+The following tests can be documented:
+
+| Test Case              | Expected Result                        |
+| ---------------------- | -------------------------------------- |
+| Valid login            | Dashboard opens                        |
+| Invalid login          | Error message displayed                |
+| Add expense            | Expense saved successfully             |
+| Delete expense         | Expense removed                        |
+| Set budget             | Budget displayed                       |
+| Expense exceeds budget | Warning displayed                      |
+| View report            | Correct spending information displayed |
+| AI recommendation      | Appropriate suggestion displayed       |
+
+### 13. Expected Output
+
+The final application should provide a dashboard containing:
+
+* Total income
+* Total expenses
+* Remaining balance
+* Monthly budget
+* Budget usage
+* Expense categories
+* Spending charts
+* AI recommendations
+* Financial reports
+
+### 14. Future Enhancements
+
+Future versions of PocketSmart AI can include:
+
+* Voice-based expense entry.
+* Receipt/image scanning.
+* Advanced machine-learning recommendations.
+* Automatic expense categorization.
+* Savings-goal tracking.
+* Notification and reminder system.
+* Mobile application.
+* Multi-language support.
+
+### 15. Conclusion
+
+The **Project Documentation Phase** provides complete information about the PocketSmart AI project and its development. It documents the problem, objectives, requirements, modules, technologies, database, AI recommendation system, testing, and future enhancements.
+
+PocketSmart AI is designed as a simple and intelligent assistant that helps users **track spending, manage budgets, understand financial habits, and receive useful recommendations**.
