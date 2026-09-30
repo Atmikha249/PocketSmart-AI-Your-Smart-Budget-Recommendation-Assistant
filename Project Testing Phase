@@ -1,1 +1,157 @@
 Project Testing Phase
+# PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+## Project Testing Phase
+
+### 1. Introduction
+
+The **Project Testing Phase** is the stage where PocketSmart AI is checked to make sure that all features work correctly and produce accurate results. Testing helps identify errors, bugs, calculation mistakes, and usability problems before the project is presented to users.
+
+The main purpose is to ensure that the application is **reliable, accurate, secure, and user-friendly**.
+
+### 2. Objectives of Testing
+
+The main objectives are:
+
+* To identify and fix errors in the application.
+* To verify that each module works correctly.
+* To check the accuracy of budget calculations.
+* To verify expense records.
+* To test AI recommendations.
+* To check database operations.
+* To ensure a simple and user-friendly interface.
+* To verify that the complete system works together properly.
+
+### 3. Types of Testing
+
+#### A. Unit Testing
+
+Each individual module is tested separately.
+
+**Examples:**
+
+* Login function
+* Add expense function
+* Budget calculation
+* Remaining balance calculation
+* Recommendation function
+
+#### B. Integration Testing
+
+Different modules are tested together.
+
+**Example:**
+
+`Add Expense → Database → Budget Calculation → AI Recommendation`
+
+This verifies that information is correctly transferred between modules.
+
+#### C. Functional Testing
+
+Functional testing checks whether the application performs the functions specified in the requirements.
+
+For example, when a user enters an expense of ₹500, the system should save it and update the total expense.
+
+#### D. User Interface Testing
+
+The interface is tested for:
+
+* Buttons
+* Forms
+* Menus
+* Navigation
+* Text fields
+* Charts
+* Error messages
+
+The application should be easy to understand and use.
+
+#### E. Database Testing
+
+The database is tested to ensure that:
+
+* User information is stored correctly.
+* Expenses are saved correctly.
+* Expenses can be edited or deleted.
+* Budget information is updated correctly.
+* Incorrect or incomplete data is handled properly.
+
+### 4. Test Cases
+
+| Test Case         | Input                   | Expected Result              | Status |
+| ----------------- | ----------------------- | ---------------------------- | ------ |
+| User Login        | Valid username/password | Dashboard opens              | Pass   |
+| Invalid Login     | Wrong password          | Error message displayed      | Pass   |
+| Add Expense       | ₹500 Food               | Expense saved                | Pass   |
+| Delete Expense    | Select existing expense | Expense deleted              | Pass   |
+| Set Budget        | ₹10,000                 | Budget saved                 | Pass   |
+| Calculate Balance | ₹10,000 − ₹4,000        | ₹6,000 displayed             | Pass   |
+| Budget Warning    | Spending reaches limit  | Warning displayed            | Pass   |
+| AI Recommendation | High food spending      | Saving suggestion displayed  | Pass   |
+| View Report       | Select month            | Monthly report displayed     | Pass   |
+| Empty Input       | No expense amount       | Validation message displayed | Pass   |
+
+### 5. AI Recommendation Testing
+
+The recommendation module is tested using different spending patterns.
+
+**Example 1:**
+
+* Budget: ₹10,000
+* Expenses: ₹4,000
+
+**Expected recommendation:**
+The system can suggest continuing the current spending pattern and maintaining savings.
+
+**Example 2:**
+
+* Budget: ₹10,000
+* Expenses: ₹9,000
+
+**Expected recommendation:**
+The system can warn the user that most of the budget has already been used and suggest reviewing unnecessary expenses.
+
+### 6. Performance Testing
+
+Performance testing checks whether PocketSmart AI responds properly when multiple records are stored.
+
+The following are checked:
+
+* Dashboard loading time.
+* Expense entry response.
+* Report generation.
+* Database response.
+* Recommendation generation.
+
+### 7. Security Testing
+
+Security testing checks whether user information is appropriately protected.
+
+The system should:
+
+* Validate user inputs.
+* Protect login credentials.
+* Prevent unauthorized access.
+* Restrict users from accessing another user's financial records.
+* Handle invalid inputs safely.
+
+### 8. Error Handling
+
+The system should display clear messages when errors occur.
+
+**Examples:**
+
+* `"Please enter an expense amount."`
+* `"Invalid login details."`
+* `"Budget amount must be greater than zero."`
+* `"Unable to save expense. Please try again."`
+
+### 9. Testing Result
+
+After testing, errors identified in the system are corrected and the affected modules are tested again. The final system should correctly perform the major functions of PocketSmart AI, including **expense tracking, budget management, calculations, database operations, reports, and recommendations**.
+
+### 10. Conclusion
+
+The **Project Testing Phase** ensures that PocketSmart AI works correctly before final deployment and demonstration. Through unit, integration, functional, database, UI, performance, and security testing, the project can be checked for accuracy and reliability.
+
+Successful testing helps ensure that PocketSmart AI provides users with a smooth experience for **tracking expenses, managing budgets, and understanding their spending patterns**.
